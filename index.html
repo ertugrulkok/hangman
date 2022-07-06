@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Hangman Game</h1>
+      <p class="subtitle">Welcome to our hangman game. Enjoy before you die</p>
+
+      <div class="mistake_counter_box">
+        <p class="mistake_counter">
+          Mistakes: <span id="mistakes">0</span> of
+          <span id="maxMistakes"></span>
+        </p>
+      </div>
+
+      <div class="hangman">
+        <!-- bild zum verändern -->
+        <img
+          src="/Week10/mittwoch/hangmanMedia/1.png"
+          alt=""
+          id="hangmanImage"
+        />
+        <p class="hangmanText">Guess the word</p>
+        <p id="wordResult">The word you tried to guess is:</p>
+        <div class="keyboard"></div>
+        <!-- setzt das gesamte Spiel zurück -->
+        <button class="btn btn_reset" onclick="reset()">Reset</button>
+      </div>
+    </div>
+   
+    <script src="app.js"></script>
+
+  </body>
+</html>
